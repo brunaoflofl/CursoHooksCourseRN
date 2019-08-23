@@ -6,25 +6,36 @@ const HomeScreen = props => {
   return (
     <View>
       <Text style={styles.text}>HomeScreen</Text>
-      <Button
+      <Button style={styles.text}
         title='Go to Component Screen'
         onPress={() => props.navigation.navigate('Component')}
       />
-       <Button
+       <Button style={styles.text}
         title='Go to List Screen'
         onPress={() => props.navigation.navigate('List')}
       />
-        <Button
+        <Button style={styles.text}
         title='Go to Image Screen'
         onPress={() => props.navigation.navigate('Image')}
       />
+        <Button style={styles.text}
+        title='Go to Counter Screen'
+        onPress={() => props.navigation.navigate('Counter')}
+      />
+       <Button style={styles.text}
+        title='Go to Color Screen'
+        onPress={() => props.navigation.navigate('Color')}
+      />
     </View>
+
     );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    padding: 10,
+    margin: 10
   }
 });
 
